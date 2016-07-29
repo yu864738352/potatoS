@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 略 -->
+    <!-- 电量进度条背景色 -->
+    <color name="battery_progressbar_bg">#FFFF8C00</color>
+    <!-- 电量进度条进度色 -->
+    <color name="battery_speed">#FF00AA00</color>
+
+</resources>

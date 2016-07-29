@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_actionbar" />
+
+    <FrameLayout
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#D1EEEE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <me.jamesxu.giftrainview.GiftRainView
+                android:id="@+id/gift_rain_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:gift_background="@android:color/white"
+                app:gift_count="15"
+                app:gift_max_size="0.8"
+                app:gift_min_size="0.5"
+                app:gift_speed="300" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/AllSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 M"
+                android:textSize="35dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

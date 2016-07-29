@@ -1,0 +1,21 @@
+刚刚经连辰提示，自己添加权限如下：
+
+1.提供者的清单文件：
+注册提供者
+<provider
+            android:exported="true"
+            android:name="com.example.mysql.MyContentProvider"
+            android:authorities="com.zzz.xxx.ccc"
+            android:permission="android.permission.zzzz"//自定义权限，
+  ></provider>
+
+****自己定义的权限需要在清单文件里面注册，放在<application标签外部，
+****自定义权限命名必须是：android.permission.xxx的格式。
+
+    <permission android:name="android.permission.zzzz">
+    </permission>
+
+
+
+2.调用者的清单文件只用正常注册就好
+<uses-permission android:name="android.permission.zzzz"/>
